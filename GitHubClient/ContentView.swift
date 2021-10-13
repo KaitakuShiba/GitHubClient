@@ -16,8 +16,6 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Owner Name")
                     .font(.caption)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.gray)
                 Text("Repository Name")
                     .font(.body)
                     .fontWeight(.semibold)

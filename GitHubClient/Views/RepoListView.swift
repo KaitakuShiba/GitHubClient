@@ -13,8 +13,12 @@ struct RepoListView: View {
     ]
     
     var body: some View {
-        List(mockRepos) { repo in
-            RepoRow(repo: repo)
+        NavigationView {
+            List(mockRepos) { repo in
+                NavigationLink(destination: RepoDetailView(repo: repo)) {
+                    RepoRow(repo: repo)
+                }
+            }.navigationTitle("Repositories")
         }
     }
 }

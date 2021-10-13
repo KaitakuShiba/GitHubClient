@@ -15,6 +15,8 @@
 		A7E447DB2716860300C7E92A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E447DA2716860300C7E92A /* User.swift */; };
 		A7E447DE2716978000C7E92A /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E447DD2716978000C7E92A /* RepoDetailView.swift */; };
 		A7E447E02716BBAF00C7E92A /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E447DF2716BBAF00C7E92A /* RepoRow.swift */; };
+		A7E447E52716C1B700C7E92A /* Repo+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E447E42716C1B700C7E92A /* Repo+mock.swift */; };
+		A7E447E72716C1CC00C7E92A /* User+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E447E62716C1CC00C7E92A /* User+mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A7E447DA2716860300C7E92A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A7E447DD2716978000C7E92A /* RepoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
 		A7E447DF2716BBAF00C7E92A /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
+		A7E447E42716C1B700C7E92A /* Repo+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repo+mock.swift"; sourceTree = "<group>"; };
+		A7E447E62716C1CC00C7E92A /* User+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A7E447CF27164F6600C7E92A /* Preview Assets.xcassets */,
+				A7E447E32716C18F00C7E92A /* Mocks */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -93,6 +98,15 @@
 				A7E447DD2716978000C7E92A /* RepoDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A7E447E32716C18F00C7E92A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A7E447E42716C1B700C7E92A /* Repo+mock.swift */,
+				A7E447E62716C1CC00C7E92A /* User+mock.swift */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,10 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E447DB2716860300C7E92A /* User.swift in Sources */,
+				A7E447E52716C1B700C7E92A /* Repo+mock.swift in Sources */,
 				A7E447DE2716978000C7E92A /* RepoDetailView.swift in Sources */,
 				A7E447D9271685F300C7E92A /* Repo.swift in Sources */,
 				A7E447CB27164F6400C7E92A /* RepoListView.swift in Sources */,
 				A7E447E02716BBAF00C7E92A /* RepoRow.swift in Sources */,
+				A7E447E72716C1CC00C7E92A /* User+mock.swift in Sources */,
 				A7E447C927164F6400C7E92A /* GitHubClientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

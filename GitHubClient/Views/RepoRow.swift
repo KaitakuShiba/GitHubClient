@@ -16,9 +16,17 @@ struct RepoRow: View {
             VStack(alignment: .leading) {
                 Text(repo.owner.name)
                     .font(.caption)
+            }
+        }
+        HStack() {
+            VStack(alignment: .leading) {
                 Text(repo.name)
                     .font(.body)
                     .fontWeight(.semibold)
+                Text(repo.description)
+                HStack() {
+                  Image(systemName: "star")
+                }
             }
         }
     }

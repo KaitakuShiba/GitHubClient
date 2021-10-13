@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RepoListView: View {
     private let mockRepos = [
         Repo(id: 1, name: "Test Repo1", owner: User(name: "Test User1")),
         Repo(id: 2, name: "Test Repo2", owner: User(name: "Test User2")),
@@ -25,24 +25,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-    }
-}
-
-struct RepoRow: View {
-    let repo: Repo
-    var body: some View {
-        HStack() {
-            VStack(alignment: .leading) {
-                Image("GitHubMark").resizable().frame(width: 44.0, height: 44.0)
-            }
-            VStack(alignment: .leading) {
-                Text(repo.owner.name)
-                    .font(.caption)
-                Text(repo.name)
-                    .font(.body)
-                    .fontWeight(.semibold)
-            }
-        }
+        RepoListView()
     }
 }
